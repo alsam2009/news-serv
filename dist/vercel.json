@@ -3,13 +3,13 @@
   "name": "nds-server",
   "builds": [
     {
-      "source": "dist/main.js",
+      "source": "main.js",
       "use": "@vercel/node"
   }
   ],
   "routes": [
     {
       "source": "/(.*)",
-      "destination": "dist/main.js" }
+      "destination": "main.js" }
   ]
 }
