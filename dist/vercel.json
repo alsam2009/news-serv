@@ -1,6 +1,6 @@
 {
-  "version": 2,
-  "name": "nds-server",
+  "version": 3,
+  "name": "nds-server2",
   "builds": [
     {
       "source": "main.js",
@@ -10,6 +10,13 @@
   "routes": [
     {
       "source": "/(.*)",
-      "destination": "main.js" }
+      "destination": "main.js",
+      "methods": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
+    }
   ]
 }
