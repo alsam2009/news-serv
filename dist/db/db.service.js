@@ -12,7 +12,7 @@ const promises_1 = require("fs/promises");
 const path_1 = require("path");
 let DbService = class DbService {
     async getAllData() {
-        const pathFile = (0, path_1.resolve)(process.cwd(), 'src', 'data', 'data.json');
+        const pathFile = (0, path_1.resolve)(process.cwd(), 'data.json');
         return JSON.parse(await (0, promises_1.readFile)(pathFile, 'utf-8')).data;
     }
     async findNews(search) {
